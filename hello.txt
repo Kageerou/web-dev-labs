@@ -1,0 +1,2 @@
+# Jordan — Lab 1
+Hi, I'm Jordan, a 4th-year Game Design student taking Web App Foundations this semester — excited to learn HTML, CSS, and JavaScript.
