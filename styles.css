@@ -23,11 +23,20 @@ a {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 header {
   padding: 24px;
   background-color: #0f9488;
   color: white;
   margin-bottom: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 header h1 {
@@ -44,6 +53,7 @@ header h1 {
   color: white;
   text-decoration: none;
   padding: 12px;
+  transition: background-color 0.2s ease;
 }
 
 #main-nav a:hover {
@@ -69,4 +79,39 @@ input, textarea, select {
   max-width: 400px;
   padding: 8px;
   margin-bottom: 12px;
+}
+.image-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #dc2626;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  z-index: 5;
+}
+
+@media (max-width: 600px) {
+  #main-nav {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  table, th, td {
+    font-size: 0.9rem;
+  }
+
+  input, textarea, select {
+    max-width: 100%;
+  }
 }
